@@ -1,0 +1,64 @@
+/* Contact Section Styles */
+.contact-section {
+    padding: 40px 20px; /* Padding for top/bottom and sides */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Grid layout for contact information and location */
+.contact-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically by default */
+    gap: 20px; /* Space between items */
+}
+
+/* Styling for contact information and location sections */
+.contact-info, .contact-location {
+    padding: 20px; /* Padding inside each section */
+}
+
+/* Heading styles for contact sections */
+.contact-info h3, .contact-location h3 {
+    font-size: 1.8em; /* Font size for headings */
+    color: #2e7d32; /* Dark green color for headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+/* Paragraph styles for contact sections */
+.contact-info p, .contact-location p {
+    font-size: 1em; /* Font size for paragraph text */
+    color: #555; /* Dark grey color for text */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+/* Styles for the unordered list in contact info */
+.contact-info ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* List item styles in the contact info section */
+.contact-info ul li {
+    font-size: 1em; /* Font size for list items */
+    margin: 10px 0; /* Space above and below list items */
+}
+
+/* Link styles in contact info */
+.contact-info a {
+    color: inherit; /* Inherit color from surrounding text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+    .contact-grid {
+        flex-direction: row; /* Arrange items in a row on larger screens */
+    }
+
+    .contact-info, .contact-location {
+        flex: 1; /* Allow sections to grow and fill space equally */
+    }
+}
